@@ -1,0 +1,11 @@
+<?php
+
+require_once(dirname(__DIR__, 2) . "/resources/config.php");
+
+include 'class.login.php';
+include 'class.database.php';
+include 'class.loginAuth.php';
+
+$redirect 	= new Login();
+$mysql 		= new mysql_db('localhost','brgyms','root','','3306'); //para sa auto creation ng db
+
